@@ -7,7 +7,8 @@
 ![architectural diagram](assets/architectural_diagram.png)
 
 - Created Monthly Cost Budget  
-   [budget file](../aws/json/budget.json)  
+   2 notifications when costs exceeds 90% of $5 and when forcasted cost is $5.  
+  [budget file](../aws/json/budget.json)  
    [budget notification file](../aws/json/budget-notifications-with-subscribers.json)
 
   ```
@@ -20,6 +21,7 @@
   ![monthly budget](assets/monthly_budget.png)
 
 - Created Daily Limit Alarm  
-   [alarm file](../aws/json/alarm-config.json)
+   Alarm for $1 daily limit  
+  [alarm file](../aws/json/alarm-config.json)
 
   ![billing alarm](assets/billing_alarm.png)
