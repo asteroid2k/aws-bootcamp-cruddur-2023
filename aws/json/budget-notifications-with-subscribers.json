@@ -1,0 +1,30 @@
+[
+  {
+    "Notification": {
+      "ComparisonOperator": "GREATER_THAN",
+      "NotificationType": "ACTUAL",
+      "Threshold": 90,
+      "ThresholdType": "PERCENTAGE"
+    },
+    "Subscribers": [
+      {
+        "SubscriptionType": "EMAIL",
+        "Address": "wonpaidragon900@gmail.com"
+      }
+    ]
+  },
+  {
+    "Notification": {
+      "ComparisonOperator": "GREATER_THAN",
+      "NotificationType": "FORECASTED",
+      "Threshold": 100,
+      "ThresholdType": "PERCENTAGE"
+    },
+    "Subscribers": [
+      {
+        "SubscriptionType": "EMAIL",
+        "Address": "wonpaidragon900@gmail.com"
+      }
+    ]
+  }
+]

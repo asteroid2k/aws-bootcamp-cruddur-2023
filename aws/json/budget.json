@@ -1,0 +1,27 @@
+{
+  "BudgetLimit": {
+    "Amount": "5.00",
+    "Unit": "USD"
+  },
+  "BudgetName": "Monthly AWS Bootcamp Cost Budget",
+  "BudgetType": "COST",
+  "CostFilters": {},
+  "CostTypes": {
+    "IncludeRefund": true,
+    "IncludeCredit": true,
+    "IncludeUpfront": true,
+    "IncludeRecurring": true,
+    "IncludeOtherSubscription": true,
+    "IncludeTax": true,
+    "IncludeSupport": true,
+    "IncludeDiscount": true,
+    "IncludeSubscription": true,
+    "UseAmortized": false,
+    "UseBlended": false
+  },
+  "TimePeriod": {
+    "Start": 1676539311,
+    "End": 1708732800
+  },
+  "TimeUnit": "MONTHLY"
+}
