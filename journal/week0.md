@@ -12,9 +12,14 @@
 
   ```
   aws budgets create-budget  \
-  --account-id $AWS_ACCOUNT_ID  \
-  --budget file://aws/json/budget.json  \
-  --notifications-with-subscribers file://aws/json/budget-notifications-with-subscribers.json
+    --account-id $AWS_ACCOUNT_ID  \
+    --budget file://aws/json/budget.json  \
+    --notifications-with-subscribers file://aws/json/budget-notifications-with-subscribers.json
   ```
 
   ![monthly budget](assets/monthly_budget.png)
+
+- Created Daily Limit Alarm  
+   [alarm file](../aws/json/alarm-config.json)
+
+  ![billing alarm](assets/billing_alarm.png)
