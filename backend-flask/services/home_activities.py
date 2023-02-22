@@ -2,7 +2,19 @@ from datetime import datetime, timedelta, timezone
 class HomeActivities:
   def run():
     now = datetime.now(timezone.utc).astimezone()
-    results = [{
+    results = [
+      {
+      'uuid': '68f126b0-1ceb-4a33-88be-d90fa7109eee',
+      'handle':  'Andrew Brown',
+      'message': 'I hate CORS!',
+      'created_at': (now - timedelta(days=2)).isoformat(),
+      'expires_at': (now + timedelta(days=5)).isoformat(),
+      'likes_count': 6000,
+      'replies_count': 0,
+      'reposts_count': 100000,
+      'replies': [],
+    },
+    {
       'uuid': '68f126b0-1ceb-4a33-88be-d90fa7109eee',
       'handle':  'Andrew Brown',
       'message': 'Cloud is fun!',
