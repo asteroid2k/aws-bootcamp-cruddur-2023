@@ -39,3 +39,15 @@
    `docker compose up`
 
    ![architectural diagram](assets/week1/exposed_stack.png)
+
+## Challenges
+
+- Push images to Docker hub
+
+  `docker tag aws-bootcamp-cruddur-2023-backend-flask asteroid2k/crudder-backend:0.1.0`  
+  `docker push asteroid2k/crudder-backend:0.1.0`
+
+  `docker tag aws-bootcamp-cruddur-2023-backend-flask asteroid2k/crudder-backend:0.1.0`  
+  `docker push asteroid2k/crudder-backend:0.1.0`
+
+  ![architectural diagram](assets/week1/dockerhub_images.png)
