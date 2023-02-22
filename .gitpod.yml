@@ -13,3 +13,4 @@ vscode:
   extensions:
     - 42Crunch.vscode-openapi
     - esbenp.prettier-vscode
+    - ms-azuretools.vscode-docker
