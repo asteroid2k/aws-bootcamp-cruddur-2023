@@ -51,3 +51,7 @@
   `docker push asteroid2k/crudder-backend:0.1.0`
 
   ![architectural diagram](assets/week1/dockerhub_images.png)
+
+- Health checks in docker compose
+
+  Added health checks for both services using curl. Specified parameters i.e timeout, interval etc in the [docker compose file](/docker-compose.yml)
