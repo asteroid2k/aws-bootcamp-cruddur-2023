@@ -40,6 +40,14 @@
 
    ![architectural diagram](assets/week1/exposed_stack.png)
 
+4. Notification feature
+
+   - Added an enpoint for notifications on backend
+   - Added a page for notifications on frontend
+   - Added enpoint details to OpenApi spec file
+
+   ![notification feature](assets/week1/notification_feature.png)
+
 ## Challenges
 
 - Push images to Docker hub
