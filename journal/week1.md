@@ -55,3 +55,8 @@
 - Health checks in docker compose
 
   Added health checks for both services using curl. Specified parameters i.e timeout, interval etc in the [docker compose file](/docker-compose.yml) for regular pinging.
+
+- Created a multi step Dockerfile
+
+  Seperated frontend build process into build step (install and build) and run step (copy build files and host with NGINX) on port 80. See [Dockerfile.multi](/frontend-react-js/Dockerfile.multi)  
+  ![architectural diagram](assets/week1/multi_step.png)
