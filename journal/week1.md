@@ -85,7 +85,7 @@
 
 - Docker on EC2
 
-  Installed Docker on an EC2 instance  
+  Installed Docker on an EC2 instance (Ubuntu)  
   Pulled and run backend docker image  
   [ec2 link](http://ec2-54-158-194-222.compute-1.amazonaws.com:4567/api/activities/home)
 
