@@ -82,3 +82,18 @@
 
   Seperated frontend build process into build step (install and build) and run step (copy build files and host with NGINX) on port 80. See [Dockerfile.multi](/frontend-react-js/Dockerfile.multi)  
   ![architectural diagram](assets/week1/multi_step.png)
+
+- Docker on EC2
+
+  Installed Docker on an EC2 instance  
+  Pulled and run backend docker image
+
+  ```
+   sudo docker pull asteroid2k/crudder-backend:0.1.0
+
+   sudo docker run --rm -d -e FRONTEND_URL="*" -e BACKEND_URL="*" -p 0.0.0.0:4567:4567 asteroid2k/crudder-backend:0.1.0
+
+  ```
+
+  ![ec2 docker SG](assets/week1/ec2_docker_sg.png)
+  ![ec2 docker](assets/week1/ec2_docker.png)
