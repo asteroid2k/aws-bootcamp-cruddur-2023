@@ -86,7 +86,8 @@
 - Docker on EC2
 
   Installed Docker on an EC2 instance  
-  Pulled and run backend docker image
+  Pulled and run backend docker image  
+  [ec2 link](http://ec2-54-158-194-222.compute-1.amazonaws.com:4567/api/activities/home)
 
   ```
    sudo docker pull asteroid2k/crudder-backend:0.1.0
@@ -95,5 +96,8 @@
 
   ```
 
-  ![ec2 docker SG](assets/week1/ec2_docker_sg.png)
   ![ec2 docker](assets/week1/ec2_docker.png)
+
+  Edited inbound rules to allow traffic to :4567
+
+  ![ec2 docker SG](assets/week1/ec2_docker_sg.png)
