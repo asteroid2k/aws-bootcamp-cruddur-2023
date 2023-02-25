@@ -21,3 +21,5 @@ vscode:
     - esbenp.prettier-vscode
     - ms-azuretools.vscode-docker
     - ms-python.python
+    - mtxr.sqltools
+    - mtxr.sqltools-driver-pg

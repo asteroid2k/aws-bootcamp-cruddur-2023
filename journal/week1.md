@@ -48,6 +48,20 @@
 
    ![notification feature](assets/week1/notification_feature.png)
 
+5. Dynamo DB
+
+   - Added dynamodb service to [docker-compose.yml](/docker-compose.yml)
+   - Created and populated Music table with aws CLI
+
+   ![local dynamodb](assets/week1/local_dynamodb.png)
+
+6. Postgres
+
+   - Added pg service to [docker-compose.yml](/docker-compose.yml)
+   - Created crudder db
+
+   ![pg](assets/week1/pg.png)
+
 ## Challenges
 
 - Push images to Docker hub
