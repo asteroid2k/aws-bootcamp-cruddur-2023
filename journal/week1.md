@@ -90,9 +90,9 @@
   [ec2 link](http://ec2-54-158-194-222.compute-1.amazonaws.com:4567/api/activities/home)
 
   ```
-   sudo docker pull asteroid2k/crudder-backend:0.1.0
+   sudo docker pull asteroid2k/crudder-backend:0.1.1
 
-   sudo docker run --rm -d -e FRONTEND_URL="*" -e BACKEND_URL="*" -p 0.0.0.0:4567:4567 asteroid2k/crudder-backend:0.1.0
+   sudo docker run --rm -d -e FRONTEND_URL="*" -e BACKEND_URL="*" -p 0.0.0.0:4567:4567 asteroid2k/crudder-backend:0.1.1
 
   ```
 
