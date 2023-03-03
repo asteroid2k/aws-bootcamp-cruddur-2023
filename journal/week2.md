@@ -11,7 +11,9 @@
    - Configure open telemetry in backend, add tracer and span to home and notification endpoints
 
    ![backend_traces](./assets/week2/backend_traces.png)
+
    ![backend_spans](./assets/week2/backend_traces_spans.png)
 
    - Add app.now and app.result_length span attributes
+
      ![backend_spans](./assets/week2/backend_traces_span_attributes.png)
