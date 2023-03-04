@@ -23,7 +23,7 @@ class HomeActivities:
                     'replies': [],
                 },
                 {
-                    'uuid': '68f126b0-1ceb-4a33-88be-d90fa7109eee',
+                    'uuid': '68f126b0-1ceb-4a33-88be-d993h7109eee',
                     'handle':  'Andrew Brown',
                     'message': 'Cloud is fun!',
                     'created_at': (now - timedelta(days=2)).isoformat(),

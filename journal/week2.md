@@ -17,3 +17,26 @@
    - Add app.now and app.result_length span attributes
 
      ![backend_spans](./assets/week2/backend_traces_span_attributes.png)
+
+## Challenges
+
+1. Honeycomb integration with frontend
+
+   - Create and configure frontend api key to allow just sending of events (security recommendation)
+
+   ![frontend_key](./assets/week2/frontend_key.png)
+
+   - Export OTEL and Honeycomb env vars
+   - Add env vars and service name to frontend service in [docker-compose.yml](../docker-compose.yml)
+   - Updated [package.json](../frontend-react-js/package.json) with open telemetry packages
+   - Configure open telemetry in frontend, add tracer and span to home endpoint
+
+   ![frontend_spans](./assets/week2/frontend_spans.png)
+
+   - Added app.userId (used username) span attribute
+
+     ![frontend_span_attributes](./assets/week2/frontend_span_attributes.png)
+
+   - Created query to find average latency by userId
+
+     ![latency_query](./assets/week2/latency_query.png)
