@@ -10,6 +10,8 @@ from opentelemetry.instrumentation.requests import RequestsInstrumentor
 from opentelemetry.exporter.otlp.proto.http.trace_exporter import OTLPSpanExporter
 from opentelemetry.sdk.trace import TracerProvider
 from opentelemetry.sdk.trace.export import BatchSpanProcessor
+from aws_xray_sdk.core import xray_recorder
+from aws_xray_sdk.ext.flask.middleware import XRayMiddleware
 
 from services.home_activities import *
 from services.notification_activities import *
@@ -32,6 +34,11 @@ tracer = trace.get_tracer(__name__)
 app = Flask(__name__)
 FlaskInstrumentor().instrument_app(app)
 RequestsInstrumentor().instrument()
+
+# X Ray
+xray_url = os.getenv("AWS_XRAY_URL")
+xray_recorder.configure(service='cruddur-backend', dynamic_naming=xray_url)
+XRayMiddleware(app, xray_recorder)
 
 frontend = os.getenv('FRONTEND_URL')
 backend = os.getenv('BACKEND_URL')

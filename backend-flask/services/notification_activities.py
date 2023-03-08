@@ -1,12 +1,12 @@
 from datetime import datetime, timedelta, timezone
-from opentelemetry import trace
-
-tracer = trace.get_tracer('activities-notification')
+from aws_xray_sdk.core import xray_recorder
 
 
 class NotificationActivities:
     def run():
+        segment = xray_recorder.begin_segment('home_notifications')
         now = datetime.now(timezone.utc).astimezone()
+        segment.put_metadata('app.now', now)
         results = [
             {
                 'uuid': '68894h6b0-1ceb-4a33-8b4e-d90fa7109eee',
@@ -40,4 +40,5 @@ class NotificationActivities:
                 }],
             }
         ]
+        segment.put_metadata('res.length', len(results))
         return results

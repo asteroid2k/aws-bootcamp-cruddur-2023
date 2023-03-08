@@ -18,6 +18,22 @@
 
      ![backend_spans](./assets/week2/backend_traces_span_attributes.png)
 
+2. AWS X ray integration with backend
+
+   - Create group and sampling rule
+     ```
+      --group-name "Cruddur" \
+      --filter-expression "service(\"cruddur-backend\")"
+     ```
+   - Add env vars and x ray service in [docker-compose.yml](../docker-compose.yml)
+   - Updated backend packages [requirements](../backend-flask/requirements.txt) with x ray sdk
+
+   ![xray_traces](./assets/week2/xray_traces.png)
+
+   - Add app.now and res.length metadata to notifications [service](../backend-flask/services/notification_activities.py)
+
+     ![xray_metadata](./assets/week2/xray_metadata.png)
+
 ## Challenges
 
 1. Honeycomb integration with frontend
