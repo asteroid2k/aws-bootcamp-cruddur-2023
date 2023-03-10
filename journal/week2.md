@@ -42,6 +42,15 @@
 
    ![cw logs](./assets/week2/cloudwatch_logs.png)
 
+4. Rollbar integration with backend
+
+   - Setup Rollbar project and export token in enviroment
+   - Add Rollbar env vars to backend service in [docker-compose.yml](../docker-compose.yml)
+   - Updated backend packages [requirements](../backend-flask/requirements.txt) with rollbar and blinker
+   - Added new endpoint to test rollbar `/rollbar/test`
+
+   ![rolllbar logs](./assets/week2/rollbar.png)
+
 ## Challenges
 
 1. Honeycomb integration with frontend
