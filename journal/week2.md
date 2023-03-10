@@ -34,6 +34,14 @@
 
      ![xray_metadata](./assets/week2/xray_metadata.png)
 
+3. AWS CloudWatch logging on backend
+
+   - Add AWS env vars to backend service in [docker-compose.yml](../docker-compose.yml)
+   - Updated backend packages [requirements](../backend-flask/requirements.txt) with watchtower lib
+   - Added log to /api/activities/home endpoint
+
+   ![cw logs](./assets/week2/cloudwatch_logs.png)
+
 ## Challenges
 
 1. Honeycomb integration with frontend
